@@ -186,3 +186,11 @@ provider = {{ grafana_image_storage.provider }}
 {{ k }} = {{ v }}
 {%   endfor %}
 {% endif %}
+
+# Auth Proxy
+{% if grafana_auth_proxy != {} %}
+[auth.proxy]
+{%   for k,v in grafana_auth_proxy.items() %}
+{{ k }} = {{ v }}
+{%   endfor %}
+{% endif %}
