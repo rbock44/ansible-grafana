@@ -95,6 +95,14 @@ grafana_auth: {}
 #  basic:
 #    enabled: true
 
+# grafana auth proxy
+# passes e.g. basic auth data to the grafana login
+grafana_auth_proxy: {}
+#  enabled: true
+#  header_name: X-WEBAUTH-USER
+#  header_property: username
+#  auto_sign_up: true
+
 grafana_ldap: {}
 #  verbose_logging: false
 #  servers:
