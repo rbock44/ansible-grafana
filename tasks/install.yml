@@ -8,6 +8,7 @@
       until: _pre_update_apt_cache is succeeded
       when:
         - ansible_pkg_mgr == "apt"
+      changed_when: no
 
     - name: Install dependencies
       package:
